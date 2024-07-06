@@ -17,8 +17,12 @@ const ReferralForm = () => {
   const onSubmit = methods.handleSubmit(async (inputs) => {
     // console.log(inputs);
     try {
+      // const response = await axios.post(
+      //   "http://localhost:5000/referral/add",
+      //   inputs
+      // );
       const response = await axios.post(
-        "http://localhost:5000/referral/add",
+        "https://accredian-backend-task-rid3.onrender.com/referral/add",
         inputs
       );
 
